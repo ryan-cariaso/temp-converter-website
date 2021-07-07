@@ -32,19 +32,21 @@ btn.onclick = (event) => {
       }
     }
 
-    else if(temperature.value === 'c') {
+    else{
+			if(temperature.value === 'c') {
 
-      if(convert.value === 'f'){
-        result.innterText = result.textContent = celsiusToFahrenheit(degree.value) + '°F';
-      }
+      	if(convert.value === 'f'){
+        	result.innerText = result.textContent = celsiusToFahrenheit(degree.value) + '°F';
+      	}
 
-      else{
-        selectOption(convert, 'f')
-        btn.click()
-      }
-    }
+      	else{
+        	selectOption(convert, 'f')
+        	btn.click()
+      	}
+    	}
 
-  }
+  	}
+	}
 
 }
 
@@ -69,6 +71,6 @@ function fahrenheitToCelsius(f) {
 }
 
 function celsiusToFahrenheit(c){
-  return pareseInt(c) * 9/5 + 32;
+  return parseInt(c) * 9/5 + 32;
 }
 
