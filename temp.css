@@ -1,0 +1,88 @@
+body {
+  background-color: rgba(0,0,0,0,1);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.input {
+  background-color: #d6cfcb;
+  width: auto;
+  height: auto;
+  padding: 25px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(0,0,0,0,5);
+  border-right: 2px solid rgba(0,0,0,0,5);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+}
+
+form div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+form div select {
+  cursor: pointer;
+}
+
+input, select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 12px 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  background-color: white;
+  margin-top: 10px;
+  display: block;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+label, .result-label {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: gray;
+  display: block;
+}
+
+button {
+  background-color: #577590;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 32px;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 28px 10px 0;
+  height: 50px;
+}
+
+.bottom {
+  margin: 20px 10px;
+}
+
+.result {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 5px;
+}
